@@ -13,8 +13,12 @@ Una imagen puede tener la etiqueta latest para representar la última versión, 
 docker pull <nombre imagen>:<tag>
 ```
 
+<img width="957" height="171" alt="image" src="https://github.com/user-attachments/assets/6b978631-8e0f-4d3d-b568-96c51fdb13ff" />
+El Sha-256 es el codigo de encriptacion que tiene el docker
+
 Descargar la imagen **hello-world**
-# COMPLETAR
+# COMPLETAR [x]
+
 
 **¿Qué es nginx**
 # COMPLETAR 
