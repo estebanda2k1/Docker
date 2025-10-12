@@ -6,10 +6,18 @@ docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
+
+Se usa para listar los archivos y directorios
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+
+Listar archivos y directorios en una ubicación específica del sistema de archivos.
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
 # COMPLETAR
-# COLOCAR UNA CAPTURA DE PANTALLA
+
+<img width="569" height="387" alt="image" src="https://github.com/user-attachments/assets/36b17463-6aa3-4ced-b849-44ea05d9ea70" />
+
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
@@ -43,7 +51,8 @@ Ejecutar
 ```
 whoami
 ```
-# COLOCAR UNA CAPTURA DE PANTALLA
+<img width="621" height="116" alt="image" src="https://github.com/user-attachments/assets/68c82b28-ab72-4cd7-b41d-97c539552c1c" />
+
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -66,6 +75,11 @@ docker exec -it <nombre contenedor> <programa o comando>
 # COMPLETAR
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+```
+docker exec -it srv cat var/jenkins_home/secrets/initialAdminPassword
+```
+<img width="1598" height="634" alt="image" src="https://github.com/user-attachments/assets/7fd1dbc5-3525-459d-b77c-325f7654c0b4" />
+
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
