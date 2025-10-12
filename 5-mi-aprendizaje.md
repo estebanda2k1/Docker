@@ -121,8 +121,11 @@ Shell interactivo: (comandos para consola despues de ejecutar el comando)
 ```
 docker exec -i <nombre contenedor> /bin/bash 
 ```
+Ejecutar un archivo (cat)
 
-
+```
+docker exec -it srv cat var/jenkins_home/secrets/initialAdminPassword
+```
 
 
 
